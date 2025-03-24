@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jowelyn Calambro Portfolio - Web Developer & Designer">
+    <title>Jowelyn Calambro | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <h1>HELLO, I'M JOWELYN CALAMBRO</h1>
+                <p>Web Developer / Designer / Problem Solver</p>
+            </div>
+        </section>
+
+        <section id="about" class="section about">
+            <h2>About Me</h2>
+            <p>I'm a passionate web developer with a love for creating sleek, responsive, and interactive websites. I specialize in front-end development but am also proficient in back-end technologies.</p>
+        </section>
+
+        <section id="skills" class="section skills">
+            <h2>Skills</h2>
+            <div class="skills-list">
+                <div class="skill">
+                    <h3>HTML & CSS</h3>
+                </div>
+                <div class="skill">
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill">
+                    <h3>React</h3>
+                </div>
+                <div class="skill">
+                    <h3>Node.js</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section projects">
+            <h2>Projects</h2>
+            <div class="project-list">
+                <div class="project-card">
+                    <h3>Project 1</h3>
+                    <p>HTML is the backbone of a web page. It provides the structure and content using elements like headings, paragraphs, links, images, and forms. CSS is used to style and layout web pages, controlling colors, fonts, spacing, and positioning of elements.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Project 2</h3>
+                    <p>JavaScript is a programming language that makes web pages interactive. It enables dynamic content changes, form validation, animations, and much more.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact">
+            <h2>Contact</h2>
+            <p>If you'd like to work together, feel free to get in touch.</p>
+            <form id="contact-form" aria-labelledby="contact">
+                <input type="text" placeholder="Name" id="name" required>
+                <input type="email" placeholder="Email" id="email" required>
+                <textarea placeholder="Your message" id="message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Jowelyn Calambro</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+  
+  <style>
+
+    body {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background-color: #8e44ad;
+    color: white;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+header .nav-links {
+    display: flex;
+    list-style: none;
+}
+
+header .nav-links li {
+    margin-left: 20px;
+}
+
+header .nav-links li a {
+    color: #f8c8d1;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.hero {
+    background: #f4f4f4;
+    padding: 80px 30px;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.hero-content p {
+    font-size: 1.6rem;
+    color: #555;
+}
+
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.skills-list, .project-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skills-list .skill, .project-card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    width: 48%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skills h2, .projects h2, .about h2, .contact h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.skills .skill h3, .project-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+form button {
+    padding: 15px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #e91e63;
+}
+
+footer {
+    background-color: #8e44ad;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    header .nav-links {
+        flex-direction: column;
+    }
+
+    .skills-list, .project-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills .skill, .project-card {
+        width: 90%;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1.4rem;
+    }
+}
+</body>
+</style>

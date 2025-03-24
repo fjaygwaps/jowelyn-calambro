@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jowelyn Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <h1> Jowelyn Calambro</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about" class="section">
+        <img src="calambro32.jpg" width="200" height="200" alt="">
+        <h2>About me</h2>
+        <p> Hi, I'm Jowelyn Calambro, but you can call me Jhang, from Prk 
+            2 Linda, Nabunturan, Davao De Oro</p>  
+    </section>
+
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="projects">
+            <h3>Projects 1: HTML</h3>
+            <p>HTML- Is the backbone of a web page, defining its structure
+          and content using elements like headings, paragraphs,links,image, and forms.</p>
+          
+          <div class="projects">
+            <h3>Projects 2: CSS</h3>
+            <p> CSS- Is used to style and layout web pages, controlling colors, fonts
+          fonts, spacing, and the posioning of elements.</p>
+          </div>
+
+          <div class="projects">
+            <h3>Projects 3: JavaScript</h3>
+            <p>JavaScript- Is a programming language that makes web pages
+                interactive, enabling dynamic content changes, form validation,
+             animations, and much more.</p> 
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact me</h2>
+        <p>feel free to reach out to me on social media:</p>
+            <div class="social-links">
+ <a href="https://www.facebook.com/calambro.jowelyn.9" target="_blank">Facebook</a>
+ <p> <a href="https://www.instagram.com/badjhanggg?igsh=mtljc21mNhpeHg2MA==" target="_blank">Instagram</a>
+    </p>
+            </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Jowelyn Calambro</p>
+    </footer>
+ 
+    <style>
+
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box ;
+            font-family: Arial, sans-serif;
+            background-color: pink;
+            color: black;
+            line-height: 1.6;
+        }
+        header{
+            background: plum;
+            color: lightblue;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul{
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li{
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a{
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+        nav ul li a:hover{
+            color: #f39c12;
+        }
+        section{
+            padding: 50px;
+            text-align: center;
+        }
+        #about, #projects, #contact{
+            background: lightblue;
+            margin: 20px auto;
+            width: 80%;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .projects{
+            background: lightgoldenrodyellow;
+            margin:15px 0;
+            padding:15px;
+            border-radius:5px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        #contact-form{
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+            margin: 0 auto;
+        }
+        #contact-form input, #contact-form textarea{
+            padding: 10px;
+            margin: 10px 0;
+            width: 100%;
+            border: 1px solid goldenrod;
+            border-radius: 5px;
+        }
+        #contact-form button{
+            padding: 10px;
+            background: #333;
+            color:#fff;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        #contact-form button:hover{
+            background: #f39c12;
+        }
+        footer{
+            text-align: center;
+            padding: 20px;
+            background: plum;
+            color: black;
+            margin-top: 20px;
+        }
+        @media (max-width: 600px) {
+            section {
+                width: 90%;
+            }
+            #contact-form {
+                width: 100%;
+            }
+        }
+    </style>
+</body>
+</html>
